@@ -11,6 +11,8 @@ A pluggable [Java](http://www.java.com) based service to bridge the [NATS messag
 
 The NATS Redis connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector) for more information. 
 
+Documentation can be found [here](http://nats-io.github.io/nats-connector-redis-plugin).
+
 ## Installation
 
 ### Maven Central
@@ -162,7 +164,6 @@ If not using maven, ensure your classpath includes the most current nats-connect
 
 ## TODO
 
-### Redis Plugin
 - [ ] Wildcard Support
 - [ ] Auth (password)
 - [ ] Failover/Clustering Support
