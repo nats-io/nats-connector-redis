@@ -1,5 +1,5 @@
-# Redis Publish/Subscribe NATS Connector
-A [Java](http://www.java.com) based service to bridge the [NATS messaging system](https://nats.io) with Redis.
+# NATS Redis Publish Subscribe Connector
+A pluggable [Java](http://www.java.com) based service to bridge the [NATS messaging system](https://nats.io) and other technologies.
 
 [![License MIT](https://img.shields.io/npm/l/express.svg)](http://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.org/nats-io/nats-connector-redis-plugin.svg?branch=master)](http://travis-ci.org/nats-io/nats-connector-redis-plugin)
@@ -9,7 +9,7 @@ A [Java](http://www.java.com) based service to bridge the [NATS messaging system
 
 ## Summary
 
-The NATS Redis connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector) for more information. 
+The NATS Redis connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector-framework) for more information. 
 
 Documentation can be found [here](http://nats-io.github.io/nats-connector-redis-plugin).
 
@@ -148,14 +148,26 @@ Basic circular route detection is performed, but is not considered a fatal error
 
 ## Running the NATS Redis connector
 
-There are two ways to launch the NATS Redis connector - invoking the connector as an application or programatically from your own application.
+There are two ways to launch the NATS Redis Pub/Sub connector - invoking the connector as an application or programatically from your own application.
+
+To invoke the connector from the command line:
+
+```
+java -classpath <your classpath> io.nats.connector.redis.RedisPubSubConnector <args>
+```
+
+The arguments are optional:
+```
+    -configURL <URL of the Redis Connector Configuration>
+    -debug
+```
 
 To invoke the connector from an application:
 ```
 System.setProperty(Connector.PLUGIN_CLASS, "com.io.nats.connector.plugins.redis.RedisPubSubPlugin");
 new Connector().run();
 ```
-or as an application:
+or finally, use the framework itself to run the redis connector:
 ```
 java -Dio.nats.connector.plugin=com.io.nats.connector.plugins.redis.RedisPubSubPlugin io.nats.connector.Connector
 ```
