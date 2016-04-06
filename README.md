@@ -2,16 +2,16 @@
 A pluggable [Java](http://www.java.com) based service to bridge the [NATS messaging system](https://nats.io) and other technologies.
 
 [![License MIT](https://img.shields.io/npm/l/express.svg)](http://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/nats-io/nats-connector-redis-plugin.svg?branch=master)](http://travis-ci.org/nats-io/nats-connector-redis-plugin)
-[![Javadoc](http://javadoc-badge.appspot.com/io.nats/nats-connector-redis-plugin.svg?label=javadoc)](http://nats-io.github.io/nats-connector-redis-plugin)
-[![Coverage Status](https://coveralls.io/repos/nats-io/nats-connector-redis-plugin/badge.svg?branch=master&service=github)](https://coveralls.io/github/nats-io/nats-connector-redis-plugin?branch=master)
+[![Build Status](https://travis-ci.org/nats-io/nats-connector-redis.svg?branch=master)](http://travis-ci.org/nats-io/nats-connector-redis)
+[![Javadoc](http://javadoc-badge.appspot.com/io.nats/nats-connector-redis.svg?label=javadoc)](http://nats-io.github.io/nats-connector-redis)
+[![Coverage Status](https://coveralls.io/repos/nats-io/nats-connector-redis/badge.svg?branch=master&service=github)](https://coveralls.io/github/nats-io/nats-connector-redis?branch=master)
 
 
 ## Summary
 
-The NATS Redis connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector-framework) for more information. 
+The NATS Redis publish subscribe connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector-framework) for more information. 
 
-Documentation can be found [here](http://nats-io.github.io/nats-connector-redis-plugin).
+Documentation can be found [here](http://nats-io.github.io/nats-connector-redis).
 
 ## Installation
 
@@ -32,7 +32,7 @@ If you are embedding the NATS Redis connector, add the following dependency to y
     ...
     <dependency>
       <groupId>io.nats</groupId>
-      <artifactId>nats-connector-redis-plugin</artifactId>
+      <artifactId>nats-connector-redis</artifactId>
       <version>0.1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
@@ -54,7 +54,7 @@ If you don't already have your pom.xml configured for using Maven snapshots, you
 #### Building from source code (this repository)
 First, download the source code:
 ```
-git clone git@github.com:nats-io/nats-connector-redis-plugin.git .
+git clone git@github.com:nats-io/nats-connector-redis.git .
 ```
 
 To build the library, use [maven](https://maven.apache.org/). From the root directory of the project:
@@ -70,7 +70,7 @@ NOTE: Running the unit tests requires that `gnatsd` be installed on your system 
 ### Source code (this repository)
 To download the source code:
 ```
-git clone git@github.com:nats-io/nats-connector-redis-plugin.git .
+git clone git@github.com:nats-io/nats-connector-redis.git .
 ```
 
 To build the library, use [maven](https://maven.apache.org/). From the root directory of the project:
@@ -84,7 +84,7 @@ mvn verify package
 * io.nats.connector.plugins.redis - This redis plug-in, developed by Apcera.
 
 
-### Referencing the Redis plugin
+### Referencing the Redis plugin from the NATS connector framework
 
 The redis plug-in referenced by the nats connector framework is:
 ```
