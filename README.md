@@ -9,7 +9,7 @@ A pluggable [Java](http://www.java.com) based service to bridge the [NATS messag
 
 ## Summary
 
-The NATS Redis publish subscribe connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [NATS Connector](https://github.com/nats-io/nats-connector-framework) for more information. 
+The NATS Redis publish subscribe connector is provided to facilitate the bridging of NATS and Redis Publish/Subscribe.  See [The NATS Connector Framework](https://github.com/nats-io/nats-connector-framework) for more information. 
 
 Documentation can be found [here](http://nats-io.github.io/nats-connector-redis).
 
