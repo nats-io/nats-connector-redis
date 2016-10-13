@@ -22,7 +22,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import org.junit.experimental.categories.Category;
 
+
+@Category(UnitTest.class)
 public class RedisPubSubPluginTest {
 
     static final String REDIS_PAYLOAD = "Hello from Redis!";
