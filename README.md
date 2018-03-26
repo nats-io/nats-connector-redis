@@ -1,7 +1,7 @@
 # NATS Redis Publish Subscribe Connector
 A pluggable [Java](http://www.java.com) based service to bridge the [NATS messaging system](https://nats.io) and other technologies.
 
-[![License MIT](https://img.shields.io/npm/l/express.svg)](http://opensource.org/licenses/MIT)
+[![License Apache 2.0](https://img.shields.io/badge/License-Apache2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/nats-io/nats-connector-redis.svg?branch=master)](http://travis-ci.org/nats-io/nats-connector-redis)
 [![Javadoc](http://javadoc-badge.appspot.com/io.nats/nats-connector-redis.svg?label=javadoc)](http://nats-io.github.io/nats-connector-redis)
 [![Coverage Status](https://coveralls.io/repos/nats-io/nats-connector-redis/badge.svg?branch=master&service=github)](https://coveralls.io/github/nats-io/nats-connector-redis?branch=master)
@@ -81,7 +81,7 @@ mvn verify package
 
 ## NATS Redis Connector source package structure
 
-* io.nats.connector.plugins.redis - This redis plug-in, developed by Apcera.
+* io.nats.connector.plugins.redis - This redis plug-in, developed by the NATS team.
 
 
 ### Referencing the Redis plugin from the NATS connector framework
@@ -179,3 +179,8 @@ If not using maven, ensure your classpath includes the most current nats-connect
 - [ ] Wildcard Support
 - [ ] Auth (password)
 - [ ] Failover/Clustering Support
+
+## License
+
+Unless otherwise noted, the NATS source files are distributed
+under the Apache Version 2.0 license found in the LICENSE file.
