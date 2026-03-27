@@ -1,3 +1,8 @@
+> [!WARNING]
+> **This repository has been archived and is no longer maintained.**
+> No further updates, bug fixes, or pull requests will be accepted.
+> For modern NATS integration patterns, please visit [nats.io](https://nats.io).
+
 # NATS Redis Publish Subscribe Connector
 A pluggable [Java](http://www.java.com) based service to bridge the [NATS messaging system](https://nats.io) and other technologies.
 
