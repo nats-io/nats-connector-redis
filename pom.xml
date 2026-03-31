@@ -50,7 +50,7 @@
         <jnats-version>0.6.0</jnats-version>
         <nats-connector-framework-version>0.1.5-SNAPSHOT</nats-connector-framework-version>
         <redis-version>2.7.3</redis-version>
-        <json-version>20140107</json-version>
+        <json-version>20230227</json-version>
         
         <!-- Used for downloading and installing a server binary for tests -->
         <server.version>0.9.4</server.version>
